@@ -1,0 +1,122 @@
+body {
+    font-family: "Rajdhani", sans-serif;
+    margin: 0px;
+    background-image: url("image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: azure;
+    min-height: 100vh;
+    max-width: 800px;
+    border-top: 10px solid lightblue;
+    border-bottom: 10px solid lightblue;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.task-input {
+    width: 80%;
+}
+
+.add-button-icon {
+    border: none;
+    background-color: lightblue;
+}
+
+.add-button-icon:hover {
+    background-color: cadetblue;
+}
+
+.add-button-icon:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15), 0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+}
+
+.task-area {
+    border: 1px solid gray;
+    margin-top: 2em;
+}
+
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+
+.task-tabs div {
+    padding: 1em;
+    cursor: pointer;
+}
+
+.task-button-box {
+    display: flex;
+}
+
+.task-button-box button:first-child:hover {
+    background-color: greenyellow;
+}
+
+.task-button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+}
+
+.task-button {
+    height: 100%;
+    border: none;
+    background-color: azure;
+    width: 4em;
+    transition: 0.5s;
+}
+
+@media screen and (max-width:48rem){
+    .task-button {
+        width: 2.5em;
+    }
+}
+
+#under-line {
+    height: 4px;
+    background-color: #0d6efd;
+    position: absolute;
+    width: 50px;
+    left: 0px;
+    top: 53px;
+    padding: 0px;
+    transition: 0.5s;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+
+.task span {
+    padding: 1em;
+}
+
+@media screen and (max-width:48rem){
+    .task span {
+        padding: 0.5em;
+    }
+}
+
+.task-done {
+    text-decoration: line-through;
+    background-color: #bfd1ec;
+}
+
+.fa-check {
+    color: limegreen;
+}
+
+.fa-arrow-rotate-right {
+    color: gray;
+}
+
+.fa-trash-can {
+    color: red;
+}
